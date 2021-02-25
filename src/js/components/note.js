@@ -8,18 +8,6 @@ import { info, error } from '@pnotify/core';
 defaults.icons = 'material';
 defaults.styling = 'material';
 
-// info({
-//   text: 'Please try another query',
-//   delay: 2000,
-//   icon: true,
-// });
-
-// error({
-//   text: 'Something went wrong. Please, try later.',
-//   delay: 2000,
-//   icon: true,
-// });
-
 export default {
   info,
   error,

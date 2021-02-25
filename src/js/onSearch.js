@@ -10,7 +10,11 @@ export default function onSearch(e) {
   imagesApiService.query = e.currentTarget.elements.query.value;
   refs.galleryContainer.innerHTML = '';
   imagesApiService.resetPage();
-  fetchImages();
+
+  if (imagesApiService.query !== '') {
+    fetchImages();
+    refs.input.value = '';
+  }
   lightBox();
   infiniteScroll();
 }
